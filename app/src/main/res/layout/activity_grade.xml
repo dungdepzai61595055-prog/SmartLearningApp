@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý điểm"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/card_background"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Điểm trung bình"
+            android:textSize="16sp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/tvAverageGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddGrade"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="+ Thêm điểm"
+        android:layout_marginBottom="15dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvGrades"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
